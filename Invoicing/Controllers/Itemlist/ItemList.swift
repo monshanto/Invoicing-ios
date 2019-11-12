@@ -578,25 +578,25 @@ extension ItemList : UITableViewDelegate , UITableViewDataSource, SwipeTableView
     
     
     
-//    func EditItemScreen(title:String,UserData:ItemObject)
-//    {
-//        let storyboard = UIStoryboard(name: "Home", bundle: nil)
-//        let AddItemsViewController =  storyboard.instantiateViewController(withIdentifier: "AddItems") as! AddItems
-//         AddItemsViewController.ItemNameValue = UserData.title
-//         AddItemsViewController.ItemDescriptionValue = UserData.descriptions
-//        AddItemsViewController.ItemQuantity = UserData.quantity
-//         AddItemsViewController.ItemPrice = UserData.Price
-//        AddItemsViewController.ItemTax = UserData.Tax
-//        AddItemsViewController.ItemID = UserData.id
-//        AddItemsViewController.delegate = self
-//
-//         AddItemsViewController.ClassType = title
-//        self.navigationController?.pushViewController(AddItemsViewController, animated: true)
-//    }
-//
-//
-//    }
-//
+    func EditItemScreen(title:String,UserData:ItemObject)
+    {
+        let storyboard = UIStoryboard(name: "Home", bundle: nil)
+        let AddItemsViewController =  storyboard.instantiateViewController(withIdentifier: "AddItems") as! AddItems
+         AddItemsViewController.ItemNameValue = UserData.title
+         AddItemsViewController.ItemDescriptionValue = UserData.descriptions
+        AddItemsViewController.ItemQuantity = UserData.quantity
+         AddItemsViewController.ItemPrice = UserData.Price
+        AddItemsViewController.ItemTax = UserData.Tax
+        AddItemsViewController.ItemID = UserData.id
+        AddItemsViewController.delegate = self
+
+         AddItemsViewController.ClassType = title
+        self.navigationController?.pushViewController(AddItemsViewController, animated: true)
+    }
+    
+    
+    }
+    
     
     
     
