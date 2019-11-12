@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="49" id="KGk-i7-Jjw" customClass="AutoSearchCell" customModule="Invoicing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="459" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="459" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address Finder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxM-6R-vaJ">
+                        <rect key="frame" x="20" y="5" width="419" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="2dR-hg-B4s"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Typing In The First Line Of Your Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqe-5D-JqJ">
+                        <rect key="frame" x="20" y="30" width="419" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="mC6-SX-bzk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oqe-5D-JqJ" firstAttribute="top" secondItem="gxM-6R-vaJ" secondAttribute="bottom" constant="5" id="5o6-Rc-ejg"/>
+                    <constraint firstItem="oqe-5D-JqJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="MbV-MU-LwD"/>
+                    <constraint firstAttribute="trailing" secondItem="oqe-5D-JqJ" secondAttribute="trailing" constant="20" id="QfC-ws-Oe6"/>
+                    <constraint firstAttribute="trailing" secondItem="gxM-6R-vaJ" secondAttribute="trailing" constant="20" id="Ua5-GU-vMr"/>
+                    <constraint firstItem="gxM-6R-vaJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ing-3q-i6R"/>
+                    <constraint firstItem="gxM-6R-vaJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="u3m-Cg-33u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="Address_SubTitle" destination="oqe-5D-JqJ" id="LHg-b7-AKL"/>
+                <outlet property="Address_Title" destination="gxM-6R-vaJ" id="Q0E-WJ-n6H"/>
+            </connections>
+            <point key="canvasLocation" x="507.97101449275368" y="-154.6875"/>
+        </tableViewCell>
+    </objects>
+</document>
